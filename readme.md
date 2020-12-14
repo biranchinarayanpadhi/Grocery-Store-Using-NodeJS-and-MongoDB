@@ -6,7 +6,7 @@ Although this website has not implemented the digital payment functionalities ye
 other features which, we hope, the users will surely enjoy. Some of the major functionalities of
 this website are provided below.  
 
-1. Application Functionalities:  
+<h4>1. Application Functionalities:</h4>  
 
 • Users can browse the store, add items to the cart and checkout as either Guest Users or as
 Registered Users by creating a user account  
@@ -29,7 +29,7 @@ images.
 option to edit, delete(soft delete) and update products.  
 
 
-2. DATABASE DESIGN  
+<h4>2. DATABASE DESIGN</h4>  
 In this Project, there are 3 Data Models that we use to store Data in MongoDB. Those models are:  
         1.User Model: For Storing the User Details(If the User has signed up with GreenMart!).
         2.Product Model: For storing Product Data with all it’s attributes.
@@ -74,6 +74,6 @@ In this Project, there are 3 Data Models that we use to store Data in MongoDB. T
                 3. Is_admin: It is used to verify if an user logged in is Admin or not. If it is Admin user ,
                         the extra feature of adding/updating/deleting product is included in the NavBar.
 
-3. LANGUAGES/FRAMEWORK USED  
+<h4>3. LANGUAGES/FRAMEWORK USED</h4>  
         Node.js, Express.js, JavaScript/jQuery, Handlebars, Bootstrap and MongoDB are used. Object
         modeling is done using Mongoose. In order to persist session data, express-session module is used.
