@@ -6,7 +6,7 @@ Although this website has not implemented the digital payment functionalities ye
 other features which, we hope, the users will surely enjoy. Some of the major functionalities of
 this website are provided below.  
 
-<h4>1. Application Functionalities:</h4>  
+<h4>1. APPLICATION FUNCTIOANILITIES:</h4>  
 
 • Users can browse the store, add items to the cart and checkout as either Guest Users or as
 Registered Users by creating a user account  
