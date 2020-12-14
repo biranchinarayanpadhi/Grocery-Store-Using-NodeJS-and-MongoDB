@@ -7,24 +7,24 @@ other features which, we hope, the users will surely enjoy. Some of the major fu
 this website are provided below.  
 
 • Users can browse the store, add items to the cart and checkout as either Guest Users or as
-Registered Users by creating a user account
+Registered Users by creating a user account  
 • Email and password fields are validated during user sign-in/signup process to ensure
-criteria are met .
-• User passwords are kept secured by storing only the password hashes into the database
-• Users can view the detailed description of a product by clicking on the product title
-• This website supports pagination and each page displays up to 15 products at a time
-• Users have the option to search and filter products
-o This website supports both partial and full search
-o Users can filter products by categories and/or by price range
-• Users can add/remove items from their cart
-• Users can fill out their shipping details on the checkout page
+criteria are met .  
+• User passwords are kept secured by storing only the password hashes into the database.    
+• Users can view the detailed description of a product by clicking on the product title.    
+• This website supports pagination and each page displays up to 15 products at a time.    
+• Users have the option to search and filter products.    
+o This website supports both partial and full search.    
+o Users can filter products by categories and/or by price range  
+• Users can add/remove items from their cart.    
+• Users can fill out their shipping details on the checkout page  
 • Once an order is placed, the order gets stored in the database and the users can retrieve
-their order history from the website
-• Admin users have the additional privileges to add new products to the store by providing
+their order history from the website.    
+• Admin users have the additional privileges to add new products to the store by providing  
 details such as title, price, product description, price description and uploading product
-images
+images.    
 • Admin users is also provided with Search Functionality to search products and have the
-option to edit, delete(soft delete) and update products.
+option to edit, delete(soft delete) and update products.  
 
 
 2. DATABASE DESIGN  
