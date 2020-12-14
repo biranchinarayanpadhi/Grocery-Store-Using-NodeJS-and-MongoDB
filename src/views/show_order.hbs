@@ -1,0 +1,27 @@
+{{>header}}
+<div class="container">
+    <h2>{{order.user_name}}, Thank You For Shopping With Us!</h2>
+    <h4>Order Id :{{order.orderId}}</h4>
+    <h4>Order Date :{{order.date}}</h4>
+    <div class="row">
+        {{#each order.products}}
+        <div class="col-xs-6 col-md-4 img-container">
+            <img class="img-responsive inline-block img-thumbnail" src="{{this.imagePath}}" />
+            <div class="caption">
+                <h5><b>{{this.title}}</b></h5>
+                <p>Quantity: {{this.quantity}}</p>
+                <p>Price: ${{this.total_product_price}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <div>
+        <h3>Your Total Price is: ${{order.total_price}}</h3>
+        </br>
+        <a class="btn btn-primary" href="/" role="button">Continue Shopping</a>
+    </div>
+    </br>
+</div>
+
+{{>footer}}

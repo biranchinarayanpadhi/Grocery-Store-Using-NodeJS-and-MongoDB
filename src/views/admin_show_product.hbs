@@ -1,0 +1,20 @@
+{{>header}}
+
+<div class="container">
+    <h1>Product Detail</h1>
+    <p><img src="{{product.imagePath}}" style="width:200px; height:200px;"></p>
+    <p>Title: {{product.title}}</p>
+    <p>Category: {{product.category}}</p>
+    <p>Price: {{product.price}}</p>
+    <p>Price Description: {{product.price_description}}</p>
+    <p>Product Description: {{product.product_description}}</p>
+    <a class="btn btn-primary" href="/products/{{product._id}}" role="button">Edit Product</a><br><br>
+
+    <form action="/products/{{product._id}}?_method=DELETE" method="POST">
+        <button type="submit" class="btn btn-danger">Delete Product</button>
+    </form>
+    <br>
+    <a href="/admin/update" class="btn btn-warning" role="button">Back to Search</a>
+</div>
+
+{{>footer}}

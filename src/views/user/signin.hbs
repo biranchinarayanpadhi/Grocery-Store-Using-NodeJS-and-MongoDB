@@ -1,0 +1,37 @@
+{{>header}}
+<div class="jumbotron">
+    <h1 class="display-4" style="text-align:center">Welcome to Green Mart!</h1>
+</div>
+<div class="container">
+    <h1>Sign In to Green Mart</h1>
+    {{# if hasErrors}}
+    <div class="alert alert-danger">
+        {{# each messages }}
+        <p>{{this}}</p>
+        {{/each}}
+    </div>
+    {{/if}}
+    <form action="/user/signin" method="POST">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="name" name="email" class="form-control" placeholder="Enter your email" id="email"
+                aria-describedby="emailHelp"><small id="email_message"></small>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>&nbsp&nbsp<small id="password_message">(Password must be more than 8 character and must include atleast 1 of each Special Char, Uppercase, Lowercase , Number)</small>
+            <input type="password" name="password" placeholder="Enter your Password" class="form-control" id="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        </br>
+        <a type="button" style="margin-top: 10px;" class="btn btn-info" href="/user/signup">New User Registration</a>
+    </form>
+    </br>
+    <a href="/" class="btn btn-warning" role="button">Back to Main</a>
+</div>
+</br>
+
+</body>
+
+</html>

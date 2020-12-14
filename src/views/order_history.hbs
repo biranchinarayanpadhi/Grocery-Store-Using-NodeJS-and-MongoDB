@@ -1,0 +1,24 @@
+{{>header}}
+
+<div class="container">
+    <h1>Your Order History</h1>
+    {{#each order }}
+    <div class="row">
+        <div class="col-xs-6 col-md-4 img-container">
+            <a href="/orders/history/{{this.orderId}}" style="text-decoration:none">
+                <div class="caption" style="border:2px solid grey;text-align:center">
+                    <h5>
+                        <h4>Order ID:</h4> {{this.orderId}}
+                    </h5>
+                    <p>
+                    <h4>Order DateTime:</h4> {{this.date}} at {{this.time}}</p>
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+</br>
+<a class="btn btn-primary" href="/" role="button">Continue Shopping</a></br>
+</div>
+
+{{>footer}}

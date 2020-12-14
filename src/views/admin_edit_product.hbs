@@ -1,0 +1,53 @@
+{{>header}}
+
+<div class="container">
+	<h1>Product Edit</h1>
+
+
+	<form action="/products/{{product._id}}?_method=PUT" method="POST" enctype="multipart/form-data" novalidate>
+		<div class="form-group">
+			<label for="file" class="col-sm-2 col-form-label">Upload a New Picture</label>
+			<input type="file" name="file">
+		</div>
+
+		<div class="form-group">
+			<label for="title" class="col-sm-2 col-form-label">Title</label>
+			<input type="text" name="title" value="{{product.title}}" class="form-control"></input>
+		</div>
+		<div class="form-group">
+			<label for="category" class="col-sm-2 col-form-label">Category</label>
+			<input type="text" name="category" value="{{product.category}}" class="form-control"></input>
+		</div>
+		<div class="form-group">
+			<label for="imagePath" class="col-sm-2 col-form-label">Image Path</label>
+			<input type="text" name="imagePath" value="{{product.imagePath}}" class="form-control"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="price" class="col-sm-2 col-form-label">Price</label>
+			<input type="text" name="price" value="{{product.price}}" class="form-control"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="is_deleted" class="col-sm-2 col-form-label">Is Deleted</label>
+			<input type="text" name="is_deleted" value="{{product.is_deleted}}" class="form-control"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="price_description" class="col-sm-2 col-form-label">Price Description</label>
+			<input type="text" placeholder="There is no price description for this product" name="price_description"
+				default value="{{product.price_description}}" class="form-control"></input>
+		</div>
+
+		<div class="form-group">
+			<label for="product_description" class="col-sm-2 col-form-label">Product Description</label>
+			<textarea name="product_description" class="form-control">{{product.product_description}}</textarea>
+		</div>
+		<button type="submit" class="btn btn-success"> Update Product </button>
+	</form>
+	</br>
+	<a href="/products/{{product._id}}/show" class="btn btn-warning" role="button">Back to Product</a>
+
+</div></br>
+
+{{>footer}}
